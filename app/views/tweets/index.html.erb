@@ -1,0 +1,24 @@
+<div class="wrapper">
+
+  <div class="side">
+    <%= render "top_profile" %>
+  </div>
+
+  <div class="chat_header">
+    <h3>経験値一覧</h3>
+  </div>
+
+  <div class="contents row">
+    <% @tweets.each do |tweet| %>
+
+      <div class="content_post">
+        <span class="name">
+          <%= tweet.title %>
+        </span>
+        <p><%= tweet.text %></p>
+      </div>
+
+    <% end %>
+  </div>
+
+</div>
